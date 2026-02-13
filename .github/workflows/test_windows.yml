@@ -32,5 +32,7 @@ jobs:
           choco uninstall llvm -y || true
           choco install llvm -y --version=21.1.8
           ls -al "/c/Program Files/LLVM/bin/" || true
-          type flang && flang --version
-          type clang && clang --version
+          type clang
+          clang --version
+          type flang
+          flang --version
